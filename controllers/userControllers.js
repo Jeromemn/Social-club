@@ -23,13 +23,13 @@ module.exports = {
             .then((dbUserData) => res.json(dbUserData))
             .catch((err) => res.status(500).json(err));
     },
-        updateUser(req, res) {
-            User.update(req, res)
+    //     updateUser(req, res) {
+    //         User.update(req, res)
             
-    },
-    deleteUser(req, res) {
-        User.deleteOne({_id:})
-    }
+    // },
+    // deleteUser(req, res) {
+    //     User.deleteOne({_id:})
+    // }
 
         
 
