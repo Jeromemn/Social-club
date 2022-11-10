@@ -1,6 +1,4 @@
 const { Thoughts, User } = require("../models");
-// const userSchema = require('../models/user');
-// const User = require('../models/user');
 const ObjectId = require("mongodb").ObjectId;
 
 module.exports = {
@@ -68,14 +66,14 @@ module.exports = {
   deleteFriend(req, res) {
     User.findByIdAndUpdate(
       { _id: req.params.userId },
-      { $pull: { friends: req.params.friendId }},
+      { $pull: { friends: req.params.friendId } },
       { runValidators: true, new: true }
     )
-    .then((user) =>
-      !user
-        ? res.status(404).json({ message: "No friend with that user id" })
-        : res.json(user)
-    )
-    .catch((err) => res.status(500).json(err));
+      .then((user) =>
+        !user
+          ? res.status(404).json({ message: "No friend with that user id" })
+          : res.json(user)
+      )
+      .catch((err) => res.status(500).json(err));
   },
 };
