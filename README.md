@@ -26,7 +26,9 @@ This application is installed by cloning the repository and opening up the termi
 ## Usage
 To use this application you will clone the repository to your local setup and will open the terminal. From there you can run Node server.js and open via insomnia or a browser. In insomnia you can test the different routes and the relationships between the models. This allows you to create, update, delete, find all and find a user by id. You can also add friends and delete friends. As well as create thoughts, edit thoughts (not even twitter gives you that option!), and delete thoughts. you can even comment or 'react' to someone elses thought. 
 
+[Link to video](https://drive.google.com/file/d/1QgWuZoAYdtiY0H0oVQF6xjrPrA3UzVt6/view)
 
+[deleteandassociatedelete.webm](https://user-images.githubusercontent.com/112592440/201023669-4431d0b7-9496-4d42-8804-9c494a6be54d.webm)
     
 ## 
 
