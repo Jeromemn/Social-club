@@ -5,13 +5,16 @@ const userSchema = new Schema({
     type: String,
     unique: true,
     required: true,
-    trimmed: true,
+    trim: true,
   },
   email: {
     type: String,
     required: true,
     unique:true,
     // match valid email -- mongoose matching validation
+    validate: {
+      validator:
+    }
   },
     thoughts: [
     {
@@ -33,6 +36,11 @@ const userSchema = new Schema({
     id:false  // not certain
 }
 );
+
+userSchema.virtual('friendCount')
+.get(function () {
+  return this.friends.length;
+});
 
 const User = model('user', userSchema);
 

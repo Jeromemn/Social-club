@@ -19,7 +19,7 @@ const usernames = [
 
   
 const users = [];
-const getNamePart = () => usernames[Math.floor(Math.random() * usernames.length)];
-const getRandomName = () => `${getNamePart()} ${getNamePart()}`;
+const getUsername = () => usernames[Math.floor(Math.random() * usernames.length)];
+const getRandomusername = () => `${getUsername()} ${getUsername()}`;
 
-module.exports = getRandomName;
+module.exports = getRandomusername;
